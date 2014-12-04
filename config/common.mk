@@ -106,3 +106,6 @@ export ANDROID_JACK_VM_ARGS += "-Xmx8g"
 
 # Inherit common product build prop overrides
 -include vendor/maple/config/common_versions.mk
+
+# Squisher Location
+SQUISHER_SCRIPT := vendor/maple/tools/squisher
