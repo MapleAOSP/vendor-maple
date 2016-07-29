@@ -99,6 +99,9 @@ export ANDROID_JACK_VM_ARGS += "-Xmx8g"
 # Copy Bootanimation
 -include vendor/maple/config/bootanimation.mk
 
+## Don't compile SystemUITests
+EXCLUDE_SYSTEMUI_TESTS := true
+
 # Inherit common product build prop overrides
 -include vendor/maple/config/common_versions.mk
 
