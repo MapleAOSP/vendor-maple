@@ -3,4 +3,4 @@
 #
 
 BOARD_SEPOLICY_DIRS += \
-    vendor/benzo/sepolicy
+    vendor/maple/sepolicy
