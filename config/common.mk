@@ -94,5 +94,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/maple/overlay/common
 
+export USE_NINJA := false
+export USE_GOMA := false
+
 # Inherit common product build prop overrides
 -include vendor/maple/config/common_versions.mk
