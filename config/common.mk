@@ -1,10 +1,6 @@
-# Benzo Rom 
+# MapleAOSP 
 # 
-# See config/optimizations/optimizations.mk to set build optimizations
 # See config/common_versions.mk to set build numbers and OTA info
-
-# Inherit build optimizations
-include vendor/benzo/config/optimizations/optimizations.mk
 
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -51,26 +47,26 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
-    vendor/benzo/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
-    vendor/benzo/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions
+    vendor/maple/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
+    vendor/maple/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions
 
 # Density Backup
 PRODUCT_COPY_FILES += \
-    vendor/benzo/prebuilt/common/addon.d/95-backup.sh:system/addon.d/95-backup.sh \
-    vendor/benzo/prebuilt/common/etc/backup.conf:system/etc/backup.conf
+    vendor/maple/prebuilt/common/addon.d/95-backup.sh:system/addon.d/95-backup.sh \
+    vendor/maple/prebuilt/common/etc/backup.conf:system/etc/backup.conf
 
 # init.d support
 PRODUCT_COPY_FILES += \
-    vendor/benzo/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
-    vendor/benzo/prebuilt/common/bin/sysinit:system/bin/sysinit
+    vendor/maple/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
+    vendor/maple/prebuilt/common/bin/sysinit:system/bin/sysinit
 
 # userinit support
 PRODUCT_COPY_FILES += \
-    vendor/benzo/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit
+    vendor/maple/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit
 
 # init file
 PRODUCT_COPY_FILES += \
-    vendor/benzo/prebuilt/common/etc/init.benzo.rc:root/init.benzo.rc
+    vendor/maple/prebuilt/common/etc/init.maple.rc:root/init.maple.rc
 
 # Enable SIP+VoIP
 PRODUCT_COPY_FILES += \
@@ -78,21 +74,14 @@ PRODUCT_COPY_FILES += \
 
 # Copy latinime for gesture typing
 PRODUCT_COPY_FILES += \
-    vendor/benzo/prebuilt/common/lib64/libjni_keyboarddecoder.so:system/lib64/libjni_keyboarddecoder \
-    vendor/benzo/prebuilt/common/lib64/libjni_latinimegoogle.so:system/lib64/libjni_latinimegoogle.so \
-    vendor/benzo/prebuilt/common/lib64/libjni_latinime.so:system/lib64/libjni_latinime.so
+    vendor/maple/prebuilt/common/lib64/libjni_keyboarddecoder.so:system/lib64/libjni_keyboarddecoder \
+    vendor/maple/prebuilt/common/lib64/libjni_latinimegoogle.so:system/lib64/libjni_latinimegoogle.so \
+    vendor/maple/prebuilt/common/lib64/libjni_latinime.so:system/lib64/libjni_latinime.so
 
 # SuperSU
 PRODUCT_COPY_FILES += \
-   vendor/benzo/prebuilt/common/etc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
-   vendor/benzo/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
-
-# Viper4Android
-PRODUCT_PACKAGES += \
-    ViPER4Android
-PRODUCT_COPY_FILES += \
-    vendor/benzo/prebuilt/common/addon.d/91-v4a.sh:system/addon.d/91-v4a.sh \
-    vendor/benzo/prebuilt/common/etc/v4a.zip:system/addon.d/v4a.zip
+   vendor/maple/prebuilt/common/etc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
+   vendor/maple/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
 
 # Extra packages
 PRODUCT_PACKAGES += \
@@ -103,7 +92,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Busybox
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/benzo/overlay/common
+PRODUCT_PACKAGE_OVERLAYS += vendor/maple/overlay/common
 
 # Inherit common product build prop overrides
--include vendor/benzo/config/common_versions.mk
+-include vendor/maple/config/common_versions.mk
