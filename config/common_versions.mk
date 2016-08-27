@@ -8,12 +8,12 @@ export ANDROID_NAME
     PLATFORM_VERSION_CODENAME := UNOFFICIAL
     MAPLE_POSTFIX := -$(shell date -u +%Y%m%d)
 
-ROM_DATE := $(shell date -u +%Y%m%d)-$(shell date -u +%H%M)
-ROM_VERSION := $(ROM_DATE)-$(TARGET_DEVICE)
+ROM_RELEASE := 1.0
+ROM_VERSION := $(ROM_RELEASE)-$(TARGET_DEVICE)
 OTA_DATE := $(shell date -u +%Y%m%d)
 
 PRODUCT_PROPERTY_OVERRIDES += \
-  ro.maple.version=$(ROM_VERSION) \
+  ro.maple.version=$(ROM_RELEASE) \
   ro.modversion=$(ROM_VERSION)
 
 MAPLE_ROM_NAME := MapleAOSP
