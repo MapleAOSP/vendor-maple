@@ -9,8 +9,8 @@ export ANDROID_NAME
     MAPLE_POSTFIX := -$(shell date -u +%Y%m%d)
 
 ROM_RELEASE := 1.0
-ROM_VERSION := $(ROM_RELEASE)-$(TARGET_DEVICE)
 OTA_DATE := $(shell date -u +%Y%m%d)
+ROM_VERSION := $(ANDROID_NAME)-Release-$(ROM_RELEASE)_$(OTA_DATE)
 
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.maple.version=$(ROM_RELEASE) \
