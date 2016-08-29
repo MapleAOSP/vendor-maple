@@ -92,6 +92,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Gallery2 \
     Launcher3 \
+    masquerade
 
 # Busybox
 PRODUCT_PACKAGES += \
