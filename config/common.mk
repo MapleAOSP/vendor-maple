@@ -26,7 +26,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.allow.mock.location=0 \
     ro.debuggable=1 \
     persist.service.adb.enable=1 \
-    persist.sys.root_access=3
+    persist.sys.root_access=3 \
+    ro.sys.fw.bservice_enable=1
 
 # Enable ADB authentication
 ADDITIONAL_DEFAULT_PROPERTIES += \
