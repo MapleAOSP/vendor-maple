@@ -102,5 +102,8 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/maple/overlay/common
 export USE_NINJA := false
 export USE_GOMA := false
 
+# Copy Bootanimation
+-include vendor/maple/config/bootanimation.mk
+
 # Inherit common product build prop overrides
 -include vendor/maple/config/common_versions.mk
