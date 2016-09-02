@@ -84,10 +84,6 @@ PRODUCT_COPY_FILES += \
    vendor/maple/prebuilt/common/etc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
    vendor/maple/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
 
-# Flash Electron Kernel
-PRODUCT_COPY_FILES += \
-   vendor/maple/prebuilt/common/etc/Electron.zip:system/addon.d/Electron.zip
-
 # Extra packages
 PRODUCT_PACKAGES += \
     Gallery2 \
