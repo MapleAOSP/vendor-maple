@@ -79,11 +79,6 @@ PRODUCT_COPY_FILES += \
     vendor/maple/prebuilt/common/lib64/libjni_latinimegoogle.so:system/lib64/libjni_latinimegoogle.so \
     vendor/maple/prebuilt/common/lib64/libjni_latinime.so:system/lib64/libjni_latinime.so
 
-# SuperSU
-PRODUCT_COPY_FILES += \
-   vendor/maple/prebuilt/common/etc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
-   vendor/maple/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
-
 # Extra packages
 PRODUCT_PACKAGES += \
     Gallery2 \
