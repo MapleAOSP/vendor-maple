@@ -8,7 +8,7 @@ export ANDROID_NAME
     PLATFORM_VERSION_CODENAME := UNOFFICIAL
     MAPLE_POSTFIX := -$(shell date -u +%Y%m%d)
 
-ROM_RELEASE := 1.0
+ROM_RELEASE := 1.1
 OTA_DATE := $(shell date -u +%Y%m%d)
 ROM_VERSION := $(ANDROID_NAME)-Release-$(ROM_RELEASE)_$(OTA_DATE)
 
