@@ -8,7 +8,7 @@ export ANDROID_NAME
     PLATFORM_VERSION_CODENAME := REL
     MAPLE_POSTFIX := -$(shell date -u +%Y%m%d)
 
-ROM_RELEASE := 3.0
+ROM_RELEASE := 4.0
 OTA_DATE := $(shell date -u +%Y%m%d)
 ROM_VERSION := $(ANDROID_NAME)-Release-$(ROM_RELEASE)_$(OTA_DATE)
 
@@ -21,5 +21,9 @@ MAPLE_ROM_NAME := MapleAOSP
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.ota.romname=$(TARGET_DEVICE) \
     ro.ota.version=$(OTA_DATE) \
-    ro.ota.device=$(TARGET_DEVICE)
+    ro.ota.device=$(TARGET_DEVICE) \
+    ro.ota.manifest=https://raw.githubusercontent.com/MapleAOSP/OTA/master/ota.xml
 
+PRODUCT_PACKAGES += \
+    MapleOTA \
+    libbypass

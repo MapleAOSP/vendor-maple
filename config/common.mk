@@ -91,9 +91,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/maple/overlay/common
 
-export USE_NINJA := false
-export USE_GOMA := false
-
 export ANDROID_JACK_VM_ARGS += "-Xmx8g"
 
 # Copy Bootanimation
